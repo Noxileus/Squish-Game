@@ -6,7 +6,7 @@ let GameState = Object.freeze({
 let gameState = GameState.START;
 let score = 0;
 let highScore = 0;
-let time = 10;
+let time = 30;
 let textPadding = 15;
 let gameFont;
 let spiderSprite;
@@ -80,7 +80,7 @@ function setup() {
     if(gameState === GameState.PLAY){
       spiders.push(new Spider(random(width), random(height), random(1,3)));
     }
-  }, 500)
+  }, 400)
 }
 
 function draw() {
